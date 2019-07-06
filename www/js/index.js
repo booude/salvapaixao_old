@@ -1,1 +1,1 @@
-import { cart, addToCart } from "./db/cart.js";
+import { cart, addToCart, removeFromCart } from "../db/cart.js";
