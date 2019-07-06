@@ -1,0 +1,13 @@
+<?xml version='0.1' encoding='utf-8'?>
+<widget id="com.ntp.salvacompra" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>salvapaixao</name>
+    <description>
+        Relação de produtos para uso interno da empresa NTP Engenharia.
+        Gerencia preços, custos tributários e organiza orçamentos.
+    </description>
+    <author email="booude@gmail.com" href="http://twitter.com/danieoul">
+        Daniel Calliari (Booude)
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

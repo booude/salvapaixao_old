@@ -1,0 +1,2590 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Tela 3</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Tela_3_Carrinho;
+	}
+	#Tela_3_Carrinho * {
+		margin: 0;
+		padding: 0;
+	}
+	#Tela_3_Carrinho {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 360px;
+		height: 638px;
+		background-color: rgba(250,250,250,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: Tela 3 Carrinho;
+		--web-view-id: Tela_3_Carrinho;
+		--web-enable-deep-linking: true;
+	}
+	#under_info {
+		position: absolute;
+		width: 360px;
+		height: 136px;
+		left: 0px;
+		top: 483px;
+		overflow: visible;
+	}
+	#final_item_grey {
+		position: absolute;
+		width: 360px;
+		height: 30px;
+		left: 0px;
+		top: 106px;
+		overflow: visible;
+	}
+	#bg {
+		fill: rgba(229,229,229,1);
+	}
+	.bg {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#price {
+		position: absolute;
+		left: 280px;
+		top: 5px;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(0,0,0,1);
+	}
+	#div_bar {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.div_bar {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 275px;
+		width: 1px;
+		height: 30px;
+	}
+	#title_left {
+		position: absolute;
+		left: 34px;
+		top: 5px;
+		overflow: visible;
+		width: 125px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(0,0,0,1);
+	}
+	#final_item_white {
+		position: absolute;
+		width: 321px;
+		height: 30px;
+		left: 34px;
+		top: 76px;
+		overflow: visible;
+	}
+	#price_A4_Text_3 {
+		position: absolute;
+		left: 246px;
+		top: 5px;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(0,0,0,1);
+	}
+	#div_bar_A4_Path_2 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.div_bar_A4_Path_2 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 241px;
+		width: 1px;
+		height: 30px;
+	}
+	#title_left_A4_Text_4 {
+		position: absolute;
+		left: 0px;
+		top: 5px;
+		overflow: visible;
+		width: 125px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(0,0,0,1);
+	}
+	#final_item_grey_A4_Group_4 {
+		position: absolute;
+		width: 360px;
+		height: 30px;
+		left: 0px;
+		top: 46px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_2 {
+		fill: rgba(229,229,229,1);
+	}
+	.bg_A4_Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#price_A4_Text_5 {
+		position: absolute;
+		left: 280px;
+		top: 5px;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -3px;
+		text-align: right;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(0,0,0,1);
+	}
+	#div_bar_A4_Path_3 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.div_bar_A4_Path_3 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 275px;
+		width: 1px;
+		height: 30px;
+	}
+	#title_left_A4_Text_6 {
+		position: absolute;
+		left: 34px;
+		top: 5px;
+		overflow: visible;
+		width: 125px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(0,0,0,1);
+	}
+	#info_bar {
+		position: absolute;
+		width: 360px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ret_ngulo_194 {
+		fill: rgba(214,214,214,1);
+	}
+	.Ret_ngulo_194 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#title_right {
+		position: absolute;
+		left: 299.5px;
+		top: 6px;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#div_bar_A4_Path_4 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.div_bar_A4_Path_4 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 275px;
+		width: 1px;
+		height: 30px;
+	}
+	#title_letf {
+		position: absolute;
+		left: 92.5px;
+		top: 5px;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#item_white {
+		position: absolute;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 418px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_4 {
+		opacity: 0.56;
+		fill: rgba(214,214,214,1);
+	}
+	.bg_A4_Rectangle_4 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#product {
+		position: absolute;
+		width: 146px;
+		height: 29px;
+		left: 107px;
+		top: 10px;
+		overflow: visible;
+	}
+	#sub_name {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#main_name {
+		position: absolute;
+		left: 38px;
+		top: 18px;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		color: rgba(0,0,0,0.541);
+	}
+	#price_counter {
+		position: absolute;
+		width: 73.5px;
+		height: 49px;
+		left: 275px;
+		top: 0px;
+		overflow: visible;
+	}
+	#add_subtract_counter {
+		position: absolute;
+		width: 53px;
+		height: 19px;
+		left: 16px;
+		top: 24px;
+		overflow: visible;
+	}
+	#plus {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 34px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_5 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_5 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#plus_vector {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.plus_vector {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 9.083px;
+		height: 9.083px;
+	}
+	#counter {
+		position: absolute;
+		left: 22.5px;
+		top: 1px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,0.541);
+	}
+	#minus {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_6 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_6 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#minus_vector {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.minus_vector {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 8.893px;
+		left: 5px;
+		width: 9.083px;
+		height: 1.297px;
+	}
+	#price_A4_Text_12 {
+		position: absolute;
+		left: 11.5px;
+		top: 7px;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.839);
+	}
+	#divbar {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divbar {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 1px;
+		height: 49px;
+	}
+	#mini_logo {
+		position: absolute;
+		width: 70px;
+		height: 37.07px;
+		left: 16px;
+		top: 6px;
+		overflow: visible;
+	}
+	#logo {
+		fill: url(#spt-small);
+	}
+	.logo {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#filter {
+		opacity: 0.07;
+		fill: rgba(0,0,0,1);
+	}
+	.filter {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#item_white_A4_Group_13 {
+		position: absolute;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 369px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_10 {
+		fill: rgba(255,255,255,1);
+	}
+	.bg_A4_Rectangle_10 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A4_Group_14 {
+		position: absolute;
+		width: 146px;
+		height: 29px;
+		left: 107px;
+		top: 10px;
+		overflow: visible;
+	}
+	#sub_name_A4_Text_13 {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#main_name_A4_Text_14 {
+		position: absolute;
+		left: 38px;
+		top: 18px;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		color: rgba(0,0,0,0.541);
+	}
+	#price_counter_A4_Group_15 {
+		position: absolute;
+		width: 73.5px;
+		height: 49px;
+		left: 275px;
+		top: 0px;
+		overflow: visible;
+	}
+	#add_subtract_counter_A4_Group_16 {
+		position: absolute;
+		width: 53px;
+		height: 19px;
+		left: 16px;
+		top: 24px;
+		overflow: visible;
+	}
+	#plus_A4_Group_17 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 34px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_11 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_11 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#plus_vector_A4_Path_8 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.plus_vector_A4_Path_8 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 9.083px;
+		height: 9.083px;
+	}
+	#counter_A4_Text_15 {
+		position: absolute;
+		left: 22.5px;
+		top: 1px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,0.541);
+	}
+	#minus_A4_Group_18 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_12 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_12 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#minus_vector_A4_Path_9 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.minus_vector_A4_Path_9 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 8.893px;
+		left: 5px;
+		width: 9.083px;
+		height: 1.297px;
+	}
+	#price_A4_Text_16 {
+		position: absolute;
+		left: 11.5px;
+		top: 7px;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.839);
+	}
+	#divbar_A4_Path_10 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divbar_A4_Path_10 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 1px;
+		height: 49px;
+	}
+	#mini_logo_A4_Group_19 {
+		position: absolute;
+		width: 70px;
+		height: 37.07px;
+		left: 16px;
+		top: 6px;
+		overflow: visible;
+	}
+	#logo_A4_Rectangle_13 {
+		fill: url(#logo_A4_Rectangle_14_pattern);
+	}
+	.logo_A4_Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#filter_A4_Rectangle_15 {
+		opacity: 0.07;
+		fill: rgba(0,0,0,1);
+	}
+	.filter_A4_Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#item_grey {
+		position: absolute;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 320px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_16 {
+		opacity: 0.56;
+		fill: rgba(214,214,214,1);
+	}
+	.bg_A4_Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A4_Group_21 {
+		position: absolute;
+		width: 146px;
+		height: 29px;
+		left: 107px;
+		top: 10px;
+		overflow: visible;
+	}
+	#sub_name_A4_Text_17 {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#main_name_A4_Text_18 {
+		position: absolute;
+		left: 38px;
+		top: 18px;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		color: rgba(0,0,0,0.541);
+	}
+	#price_counter_A4_Group_22 {
+		position: absolute;
+		width: 73.5px;
+		height: 49px;
+		left: 275px;
+		top: 0px;
+		overflow: visible;
+	}
+	#add_subtract_counter_A4_Group_23 {
+		position: absolute;
+		width: 53px;
+		height: 19px;
+		left: 16px;
+		top: 24px;
+		overflow: visible;
+	}
+	#plus_A4_Group_24 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 34px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_17 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_17 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#plus_vector_A4_Path_11 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.plus_vector_A4_Path_11 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 9.083px;
+		height: 9.083px;
+	}
+	#counter_A4_Text_19 {
+		position: absolute;
+		left: 22.5px;
+		top: 1px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,0.541);
+	}
+	#minus_A4_Group_25 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_18 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_18 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#minus_vector_A4_Path_12 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.minus_vector_A4_Path_12 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 8.893px;
+		left: 5px;
+		width: 9.083px;
+		height: 1.297px;
+	}
+	#price_A4_Text_20 {
+		position: absolute;
+		left: 11.5px;
+		top: 7px;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.839);
+	}
+	#divbar_A4_Path_13 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divbar_A4_Path_13 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 1px;
+		height: 49px;
+	}
+	#mini_logo_A4_Group_26 {
+		position: absolute;
+		width: 70px;
+		height: 37.07px;
+		left: 16px;
+		top: 6px;
+		overflow: visible;
+	}
+	#logo_A4_Rectangle_19 {
+		fill: url(#logo_A4_Rectangle_20_pattern);
+	}
+	.logo_A4_Rectangle_19 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#filter_A4_Rectangle_21 {
+		opacity: 0.07;
+		fill: rgba(0,0,0,1);
+	}
+	.filter_A4_Rectangle_21 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#item_white_A4_Group_27 {
+		position: absolute;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 271px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_22 {
+		fill: rgba(255,255,255,1);
+	}
+	.bg_A4_Rectangle_22 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A4_Group_28 {
+		position: absolute;
+		width: 146px;
+		height: 29px;
+		left: 107px;
+		top: 10px;
+		overflow: visible;
+	}
+	#sub_name_A4_Text_21 {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#main_name_A4_Text_22 {
+		position: absolute;
+		left: 38px;
+		top: 18px;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		color: rgba(0,0,0,0.541);
+	}
+	#price_counter_A4_Group_29 {
+		position: absolute;
+		width: 73.5px;
+		height: 49px;
+		left: 275px;
+		top: 0px;
+		overflow: visible;
+	}
+	#add_subtract_counter_A4_Group_30 {
+		position: absolute;
+		width: 53px;
+		height: 19px;
+		left: 16px;
+		top: 24px;
+		overflow: visible;
+	}
+	#plus_A4_Group_31 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 34px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_23 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_23 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#plus_vector_A4_Path_14 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.plus_vector_A4_Path_14 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 9.083px;
+		height: 9.083px;
+	}
+	#counter_A4_Text_23 {
+		position: absolute;
+		left: 22.5px;
+		top: 1px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,0.541);
+	}
+	#minus_A4_Group_32 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_24 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_24 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#minus_vector_A4_Path_15 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.minus_vector_A4_Path_15 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 8.893px;
+		left: 5px;
+		width: 9.083px;
+		height: 1.297px;
+	}
+	#price_A4_Text_24 {
+		position: absolute;
+		left: 11.5px;
+		top: 7px;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.839);
+	}
+	#divbar_A4_Path_16 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divbar_A4_Path_16 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 1px;
+		height: 49px;
+	}
+	#mini_logo_A4_Group_33 {
+		position: absolute;
+		width: 70px;
+		height: 37.07px;
+		left: 16px;
+		top: 6px;
+		overflow: visible;
+	}
+	#logo_A4_Rectangle_25 {
+		fill: url(#logo_A4_Rectangle_26_pattern);
+	}
+	.logo_A4_Rectangle_25 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#filter_A4_Rectangle_27 {
+		opacity: 0.07;
+		fill: rgba(0,0,0,1);
+	}
+	.filter_A4_Rectangle_27 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#item_grey_A4_Group_34 {
+		position: absolute;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 222px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_28 {
+		opacity: 0.56;
+		fill: rgba(214,214,214,1);
+	}
+	.bg_A4_Rectangle_28 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A4_Group_35 {
+		position: absolute;
+		width: 146px;
+		height: 29px;
+		left: 107px;
+		top: 10px;
+		overflow: visible;
+	}
+	#sub_name_A4_Text_25 {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#main_name_A4_Text_26 {
+		position: absolute;
+		left: 38px;
+		top: 18px;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		color: rgba(0,0,0,0.541);
+	}
+	#price_counter_A4_Group_36 {
+		position: absolute;
+		width: 73.5px;
+		height: 49px;
+		left: 275px;
+		top: 0px;
+		overflow: visible;
+	}
+	#add_subtract_counter_A4_Group_37 {
+		position: absolute;
+		width: 53px;
+		height: 19px;
+		left: 16px;
+		top: 24px;
+		overflow: visible;
+	}
+	#plus_A4_Group_38 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 34px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_29 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_29 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#plus_vector_A4_Path_17 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.plus_vector_A4_Path_17 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 9.083px;
+		height: 9.083px;
+	}
+	#counter_A4_Text_27 {
+		position: absolute;
+		left: 22.5px;
+		top: 1px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,0.541);
+	}
+	#minus_A4_Group_39 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_30 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_30 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#minus_vector_A4_Path_18 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.minus_vector_A4_Path_18 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 8.893px;
+		left: 5px;
+		width: 9.083px;
+		height: 1.297px;
+	}
+	#price_A4_Text_28 {
+		position: absolute;
+		left: 11.5px;
+		top: 7px;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.839);
+	}
+	#divbar_A4_Path_19 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divbar_A4_Path_19 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 1px;
+		height: 49px;
+	}
+	#mini_logo_A4_Group_40 {
+		position: absolute;
+		width: 70px;
+		height: 37.07px;
+		left: 16px;
+		top: 6px;
+		overflow: visible;
+	}
+	#logo_A4_Rectangle_31 {
+		fill: url(#logo_A4_Rectangle_32_pattern);
+	}
+	.logo_A4_Rectangle_31 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#filter_A4_Rectangle_33 {
+		opacity: 0.07;
+		fill: rgba(0,0,0,1);
+	}
+	.filter_A4_Rectangle_33 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#item_white_A4_Group_41 {
+		position: absolute;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 173px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_34 {
+		fill: rgba(255,255,255,1);
+	}
+	.bg_A4_Rectangle_34 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A4_Group_42 {
+		position: absolute;
+		width: 146px;
+		height: 29px;
+		left: 107px;
+		top: 10px;
+		overflow: visible;
+	}
+	#sub_name_A4_Text_29 {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#main_name_A4_Text_30 {
+		position: absolute;
+		left: 38px;
+		top: 18px;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		color: rgba(0,0,0,0.541);
+	}
+	#price_counter_A4_Group_43 {
+		position: absolute;
+		width: 73.5px;
+		height: 49px;
+		left: 275px;
+		top: 0px;
+		overflow: visible;
+	}
+	#add_subtract_counter_A4_Group_44 {
+		position: absolute;
+		width: 53px;
+		height: 19px;
+		left: 16px;
+		top: 24px;
+		overflow: visible;
+	}
+	#plus_A4_Group_45 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 34px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_35 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_35 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#plus_vector_A4_Path_20 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.plus_vector_A4_Path_20 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 9.083px;
+		height: 9.083px;
+	}
+	#counter_A4_Text_31 {
+		position: absolute;
+		left: 22.5px;
+		top: 1px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,0.541);
+	}
+	#minus_A4_Group_46 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_36 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_36 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#minus_vector_A4_Path_21 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.minus_vector_A4_Path_21 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 8.893px;
+		left: 5px;
+		width: 9.083px;
+		height: 1.297px;
+	}
+	#price_A4_Text_32 {
+		position: absolute;
+		left: 11.5px;
+		top: 7px;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.839);
+	}
+	#divbar_A4_Path_22 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divbar_A4_Path_22 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 1px;
+		height: 49px;
+	}
+	#mini_logo_A4_Group_47 {
+		position: absolute;
+		width: 70px;
+		height: 37.07px;
+		left: 16px;
+		top: 6px;
+		overflow: visible;
+	}
+	#logo_A4_Rectangle_37 {
+		fill: url(#logo_A4_Rectangle_38_pattern);
+	}
+	.logo_A4_Rectangle_37 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#filter_A4_Rectangle_39 {
+		opacity: 0.07;
+		fill: rgba(0,0,0,1);
+	}
+	.filter_A4_Rectangle_39 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#item_grey_A4_Group_48 {
+		position: absolute;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 124px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_40 {
+		opacity: 0.56;
+		fill: rgba(214,214,214,1);
+	}
+	.bg_A4_Rectangle_40 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 49px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A4_Group_49 {
+		position: absolute;
+		width: 146px;
+		height: 29px;
+		left: 107px;
+		top: 10px;
+		overflow: visible;
+	}
+	#sub_name_A4_Text_33 {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#main_name_A4_Text_34 {
+		position: absolute;
+		left: 38px;
+		top: 18px;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		color: rgba(0,0,0,0.541);
+	}
+	#price_counter_A4_Group_50 {
+		position: absolute;
+		width: 73.5px;
+		height: 49px;
+		left: 275px;
+		top: 0px;
+		overflow: visible;
+	}
+	#add_subtract_counter_A4_Group_51 {
+		position: absolute;
+		width: 53px;
+		height: 19px;
+		left: 16px;
+		top: 24px;
+		overflow: visible;
+	}
+	#plus_A4_Group_52 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 34px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_41 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_41 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#plus_vector_A4_Path_23 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.plus_vector_A4_Path_23 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 9.083px;
+		height: 9.083px;
+	}
+	#counter_A4_Text_35 {
+		position: absolute;
+		left: 22.5px;
+		top: 1px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,0.541);
+	}
+	#minus_A4_Group_53 {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_42 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_42 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#minus_vector_A4_Path_24 {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.minus_vector_A4_Path_24 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 8.893px;
+		left: 5px;
+		width: 9.083px;
+		height: 1.297px;
+	}
+	#price_A4_Text_36 {
+		position: absolute;
+		left: 11.5px;
+		top: 7px;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.839);
+	}
+	#divbar_A4_Path_25 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.divbar_A4_Path_25 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 1px;
+		height: 49px;
+	}
+	#mini_logo_A4_Group_54 {
+		position: absolute;
+		width: 70px;
+		height: 37.07px;
+		left: 16px;
+		top: 6px;
+		overflow: visible;
+	}
+	#logo_A4_Rectangle_43 {
+		fill: url(#logo_A4_Rectangle_44_pattern);
+	}
+	.logo_A4_Rectangle_43 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#filter_A4_Rectangle_45 {
+		opacity: 0.07;
+		fill: rgba(0,0,0,1);
+	}
+	.filter_A4_Rectangle_45 {
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		height: 37.07px;
+		left: 0px;
+		top: 0px;
+	}
+	#info_bar_A4_Group_55 {
+		position: absolute;
+		width: 360px;
+		height: 30px;
+		left: 0px;
+		top: 78px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_46 {
+		fill: rgba(214,214,214,1);
+	}
+	.bg_A4_Rectangle_46 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 30px;
+		left: 0px;
+		top: 0px;
+	}
+	#title_right_A4_Text_37 {
+		position: absolute;
+		left: 288px;
+		top: 5px;
+		overflow: visible;
+		width: 60px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#div_bar_A4_Path_26 {
+		opacity: 0.18;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.div_bar_A4_Path_26 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 275px;
+		width: 1px;
+		height: 30px;
+	}
+	#title_left_A4_Text_38 {
+		position: absolute;
+		left: 105px;
+		top: 5px;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#header {
+		position: fixed;
+		width: 360px;
+		height: 81px;
+		left: 0px;
+		top: -24px;
+		overflow: visible;
+	}
+	#headerbg {
+		fill: rgba(224,224,224,1);
+	}
+	.headerbg {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 80px;
+		left: 0px;
+		top: 1px;
+	}
+	#header_A4_Rectangle_48 {
+		fill: rgba(245,245,245,1);
+	}
+	.header_A4_Rectangle_48 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+	}
+	#back {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 16px;
+		top: 40px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_49 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_49 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#vector {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.vector {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		width: 16px;
+		height: 16px;
+	}
+	#title {
+		position: absolute;
+		left: 72.021px;
+		top: 40px;
+		overflow: visible;
+		width: 100px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#shopping_cart {
+		opacity: 0.54;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 320px;
+		top: 41px;
+		overflow: visible;
+	}
+	#bg_A4_Rectangle_50 {
+		fill: transparent;
+	}
+	.bg_A4_Rectangle_50 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#vector_A4_Group_59 {
+		position: absolute;
+		width: 19.25px;
+		height: 18px;
+		left: 2px;
+		top: 3px;
+		overflow: visible;
+	}
+	#Caminho_77 {
+		fill: rgba(3,1,4,1);
+	}
+	.Caminho_77 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 19.25px;
+		height: 14px;
+	}
+	#Elipse_10 {
+		fill: rgba(3,1,4,1);
+	}
+	.Elipse_10 {
+		position: absolute;
+		overflow: visible;
+		width: 3px;
+		height: 3px;
+		left: 5.25px;
+		top: 15px;
+	}
+	#Elipse_11 {
+		fill: rgba(3,1,4,1);
+	}
+	.Elipse_11 {
+		position: absolute;
+		overflow: visible;
+		width: 3px;
+		height: 3px;
+		left: 14.25px;
+		top: 15px;
+	}
+</style>
+</head>
+<body>
+<div id="Tela_3_Carrinho">
+	<div id="under_info">
+		<div id="final_item_grey">
+			<svg class="bg">
+				<rect id="bg" rx="0" ry="0" x="0" y="0" width="360" height="30">
+				</rect>
+			</svg>
+			<div id="price">
+				<span>R$ 895,36</span>
+			</div>
+			<svg class="div_bar" viewBox="0 0 1 30">
+				<path id="div_bar" d="M 0 0 L 0 24.37500190734863 L 0 28.125 L 0 30">
+				</path>
+			</svg>
+			<div id="title_left">
+				<span>Valor Total com IPI</span>
+			</div>
+		</div>
+		<div id="final_item_white">
+			<div id="price_A4_Text_3">
+				<span>R$ 895,36</span>
+			</div>
+			<svg class="div_bar_A4_Path_2" viewBox="0 0 1 30">
+				<path id="div_bar_A4_Path_2" d="M 0 0 L 0 24.37500190734863 L 0 28.125 L 0 30">
+				</path>
+			</svg>
+			<div id="title_left_A4_Text_4">
+				<span>Valor do IPI</span>
+			</div>
+		</div>
+		<div id="final_item_grey_A4_Group_4">
+			<svg class="bg_A4_Rectangle_2">
+				<rect id="bg_A4_Rectangle_2" rx="0" ry="0" x="0" y="0" width="360" height="30">
+				</rect>
+			</svg>
+			<div id="price_A4_Text_5">
+				<span>R$ 895,36</span>
+			</div>
+			<svg class="div_bar_A4_Path_3" viewBox="0 0 1 30">
+				<path id="div_bar_A4_Path_3" d="M 0 0 L 0 24.37500190734863 L 0 28.125 L 0 30">
+				</path>
+			</svg>
+			<div id="title_left_A4_Text_6">
+				<span>Subtotal sem IPI</span>
+			</div>
+		</div>
+		<div id="info_bar">
+			<svg class="Ret_ngulo_194">
+				<rect id="Ret_ngulo_194" rx="0" ry="0" x="0" y="0" width="360" height="30">
+				</rect>
+			</svg>
+			<div id="title_right">
+				<span>Total</span>
+			</div>
+			<svg class="div_bar_A4_Path_4" viewBox="0 0 1 30">
+				<path id="div_bar_A4_Path_4" d="M 0 0 L 0 24.37500190734863 L 0 28.125 L 0 30">
+				</path>
+			</svg>
+			<div id="title_letf">
+				<span>Informações</span>
+			</div>
+		</div>
+	</div>
+	<div id="item_white">
+		<svg class="bg_A4_Rectangle_4">
+			<rect id="bg_A4_Rectangle_4" rx="0" ry="0" x="0" y="0" width="360" height="49">
+			</rect>
+		</svg>
+		<div id="product">
+			<div id="sub_name">
+				<span>Salva Piso Tradicional</span>
+			</div>
+			<div id="main_name">
+				<span>Papel+Bolha(1m)</span>
+			</div>
+		</div>
+		<div id="price_counter">
+			<div id="add_subtract_counter">
+				<div id="plus">
+					<svg class="bg_A4_Rectangle_5">
+						<rect id="bg_A4_Rectangle_5" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="plus_vector" viewBox="5 5 9.083 9.083">
+						<path id="plus_vector" d="M 8.892508506774902 5 L 8.892508506774902 8.892508506774902 L 5 8.892508506774902 L 5 10.1900110244751 L 8.892508506774902 10.1900110244751 L 8.892508506774902 14.08251857757568 L 10.1900110244751 14.08251857757568 L 10.1900110244751 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 10.1900110244751 8.892508506774902 L 10.1900110244751 5 L 8.892508506774902 5 Z">
+						</path>
+					</svg>
+				</div>
+				<div id="counter">
+					<span>0</span>
+				</div>
+				<div id="minus">
+					<svg class="bg_A4_Rectangle_6">
+						<rect id="bg_A4_Rectangle_6" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="minus_vector" viewBox="5 8.893 9.083 1.298">
+						<path id="minus_vector" d="M 5 8.892508506774902 L 5 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 5 8.892508506774902 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="price_A4_Text_12">
+				<span>R$ 176,10</span>
+			</div>
+			<svg class="divbar" viewBox="0 0 1 49">
+				<path id="divbar" d="M 0 0 L 0 0.765625 L 0 39.81250381469727 L 0 45.9375 L 0 49">
+				</path>
+			</svg>
+		</div>
+		<div id="mini_logo">
+			<svg class="logo">
+				<pattern elementId="logo_A4_Rectangle_8" id="spt-small" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="img/cart/spt-small.png" xlink:href="spt-small.png"></image>
+				</pattern>
+				<rect id="logo" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+			<svg class="filter">
+				<rect id="filter" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div id="item_white_A4_Group_13">
+		<svg class="bg_A4_Rectangle_10">
+			<rect id="bg_A4_Rectangle_10" rx="0" ry="0" x="0" y="0" width="360" height="49">
+			</rect>
+		</svg>
+		<div id="product_A4_Group_14">
+			<div id="sub_name_A4_Text_13">
+				<span>Salva Piso Tradicional</span>
+			</div>
+			<div id="main_name_A4_Text_14">
+				<span>Papel+Bolha(1m)</span>
+			</div>
+		</div>
+		<div id="price_counter_A4_Group_15">
+			<div id="add_subtract_counter_A4_Group_16">
+				<div id="plus_A4_Group_17">
+					<svg class="bg_A4_Rectangle_11">
+						<rect id="bg_A4_Rectangle_11" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="plus_vector_A4_Path_8" viewBox="5 5 9.083 9.083">
+						<path id="plus_vector_A4_Path_8" d="M 8.892508506774902 5 L 8.892508506774902 8.892508506774902 L 5 8.892508506774902 L 5 10.1900110244751 L 8.892508506774902 10.1900110244751 L 8.892508506774902 14.08251857757568 L 10.1900110244751 14.08251857757568 L 10.1900110244751 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 10.1900110244751 8.892508506774902 L 10.1900110244751 5 L 8.892508506774902 5 Z">
+						</path>
+					</svg>
+				</div>
+				<div id="counter_A4_Text_15">
+					<span>0</span>
+				</div>
+				<div id="minus_A4_Group_18">
+					<svg class="bg_A4_Rectangle_12">
+						<rect id="bg_A4_Rectangle_12" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="minus_vector_A4_Path_9" viewBox="5 8.893 9.083 1.298">
+						<path id="minus_vector_A4_Path_9" d="M 5 8.892508506774902 L 5 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 5 8.892508506774902 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="price_A4_Text_16">
+				<span>R$ 176,10</span>
+			</div>
+			<svg class="divbar_A4_Path_10" viewBox="0 0 1 49">
+				<path id="divbar_A4_Path_10" d="M 0 0 L 0 0.765625 L 0 39.81250381469727 L 0 45.9375 L 0 49">
+				</path>
+			</svg>
+		</div>
+		<div id="mini_logo_A4_Group_19">
+			<svg class="logo_A4_Rectangle_13">
+				<pattern elementId="logo_A4_Rectangle_14" id="logo_A4_Rectangle_14_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="img/cart/spt-small.png" xlink:href="spt-small.png"></image>
+				</pattern>
+				<rect id="logo_A4_Rectangle_13" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+			<svg class="filter_A4_Rectangle_15">
+				<rect id="filter_A4_Rectangle_15" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div id="item_grey">
+		<svg class="bg_A4_Rectangle_16">
+			<rect id="bg_A4_Rectangle_16" rx="0" ry="0" x="0" y="0" width="360" height="49">
+			</rect>
+		</svg>
+		<div id="product_A4_Group_21">
+			<div id="sub_name_A4_Text_17">
+				<span>Salva Piso Tradicional</span>
+			</div>
+			<div id="main_name_A4_Text_18">
+				<span>Papel+Bolha(1m)</span>
+			</div>
+		</div>
+		<div id="price_counter_A4_Group_22">
+			<div id="add_subtract_counter_A4_Group_23">
+				<div id="plus_A4_Group_24">
+					<svg class="bg_A4_Rectangle_17">
+						<rect id="bg_A4_Rectangle_17" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="plus_vector_A4_Path_11" viewBox="5 5 9.083 9.083">
+						<path id="plus_vector_A4_Path_11" d="M 8.892508506774902 5 L 8.892508506774902 8.892508506774902 L 5 8.892508506774902 L 5 10.1900110244751 L 8.892508506774902 10.1900110244751 L 8.892508506774902 14.08251857757568 L 10.1900110244751 14.08251857757568 L 10.1900110244751 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 10.1900110244751 8.892508506774902 L 10.1900110244751 5 L 8.892508506774902 5 Z">
+						</path>
+					</svg>
+				</div>
+				<div id="counter_A4_Text_19">
+					<span>0</span>
+				</div>
+				<div id="minus_A4_Group_25">
+					<svg class="bg_A4_Rectangle_18">
+						<rect id="bg_A4_Rectangle_18" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="minus_vector_A4_Path_12" viewBox="5 8.893 9.083 1.298">
+						<path id="minus_vector_A4_Path_12" d="M 5 8.892508506774902 L 5 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 5 8.892508506774902 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="price_A4_Text_20">
+				<span>R$ 176,10</span>
+			</div>
+			<svg class="divbar_A4_Path_13" viewBox="0 0 1 49">
+				<path id="divbar_A4_Path_13" d="M 0 0 L 0 0.765625 L 0 39.81250381469727 L 0 45.9375 L 0 49">
+				</path>
+			</svg>
+		</div>
+		<div id="mini_logo_A4_Group_26">
+			<svg class="logo_A4_Rectangle_19">
+				<pattern elementId="logo_A4_Rectangle_20" id="logo_A4_Rectangle_20_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="img/cart/spt-small.png" xlink:href="spt-small.png"></image>
+				</pattern>
+				<rect id="logo_A4_Rectangle_19" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+			<svg class="filter_A4_Rectangle_21">
+				<rect id="filter_A4_Rectangle_21" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div id="item_white_A4_Group_27">
+		<svg class="bg_A4_Rectangle_22">
+			<rect id="bg_A4_Rectangle_22" rx="0" ry="0" x="0" y="0" width="360" height="49">
+			</rect>
+		</svg>
+		<div id="product_A4_Group_28">
+			<div id="sub_name_A4_Text_21">
+				<span>Salva Piso Tradicional</span>
+			</div>
+			<div id="main_name_A4_Text_22">
+				<span>Papel+Bolha(1m)</span>
+			</div>
+		</div>
+		<div id="price_counter_A4_Group_29">
+			<div id="add_subtract_counter_A4_Group_30">
+				<div id="plus_A4_Group_31">
+					<svg class="bg_A4_Rectangle_23">
+						<rect id="bg_A4_Rectangle_23" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="plus_vector_A4_Path_14" viewBox="5 5 9.083 9.083">
+						<path id="plus_vector_A4_Path_14" d="M 8.892508506774902 5 L 8.892508506774902 8.892508506774902 L 5 8.892508506774902 L 5 10.1900110244751 L 8.892508506774902 10.1900110244751 L 8.892508506774902 14.08251857757568 L 10.1900110244751 14.08251857757568 L 10.1900110244751 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 10.1900110244751 8.892508506774902 L 10.1900110244751 5 L 8.892508506774902 5 Z">
+						</path>
+					</svg>
+				</div>
+				<div id="counter_A4_Text_23">
+					<span>0</span>
+				</div>
+				<div id="minus_A4_Group_32">
+					<svg class="bg_A4_Rectangle_24">
+						<rect id="bg_A4_Rectangle_24" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="minus_vector_A4_Path_15" viewBox="5 8.893 9.083 1.298">
+						<path id="minus_vector_A4_Path_15" d="M 5 8.892508506774902 L 5 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 5 8.892508506774902 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="price_A4_Text_24">
+				<span>R$ 176,10</span>
+			</div>
+			<svg class="divbar_A4_Path_16" viewBox="0 0 1 49">
+				<path id="divbar_A4_Path_16" d="M 0 0 L 0 0.765625 L 0 39.81250381469727 L 0 45.9375 L 0 49">
+				</path>
+			</svg>
+		</div>
+		<div id="mini_logo_A4_Group_33">
+			<svg class="logo_A4_Rectangle_25">
+				<pattern elementId="logo_A4_Rectangle_26" id="logo_A4_Rectangle_26_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="img/cart/spt-small.png" xlink:href="spt-small.png"></image>
+				</pattern>
+				<rect id="logo_A4_Rectangle_25" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+			<svg class="filter_A4_Rectangle_27">
+				<rect id="filter_A4_Rectangle_27" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div id="item_grey_A4_Group_34">
+		<svg class="bg_A4_Rectangle_28">
+			<rect id="bg_A4_Rectangle_28" rx="0" ry="0" x="0" y="0" width="360" height="49">
+			</rect>
+		</svg>
+		<div id="product_A4_Group_35">
+			<div id="sub_name_A4_Text_25">
+				<span>Salva Piso Tradicional</span>
+			</div>
+			<div id="main_name_A4_Text_26">
+				<span>Papel+Bolha(1m)</span>
+			</div>
+		</div>
+		<div id="price_counter_A4_Group_36">
+			<div id="add_subtract_counter_A4_Group_37">
+				<div id="plus_A4_Group_38">
+					<svg class="bg_A4_Rectangle_29">
+						<rect id="bg_A4_Rectangle_29" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="plus_vector_A4_Path_17" viewBox="5 5 9.083 9.083">
+						<path id="plus_vector_A4_Path_17" d="M 8.892508506774902 5 L 8.892508506774902 8.892508506774902 L 5 8.892508506774902 L 5 10.1900110244751 L 8.892508506774902 10.1900110244751 L 8.892508506774902 14.08251857757568 L 10.1900110244751 14.08251857757568 L 10.1900110244751 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 10.1900110244751 8.892508506774902 L 10.1900110244751 5 L 8.892508506774902 5 Z">
+						</path>
+					</svg>
+				</div>
+				<div id="counter_A4_Text_27">
+					<span>0</span>
+				</div>
+				<div id="minus_A4_Group_39">
+					<svg class="bg_A4_Rectangle_30">
+						<rect id="bg_A4_Rectangle_30" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="minus_vector_A4_Path_18" viewBox="5 8.893 9.083 1.298">
+						<path id="minus_vector_A4_Path_18" d="M 5 8.892508506774902 L 5 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 5 8.892508506774902 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="price_A4_Text_28">
+				<span>R$ 176,10</span>
+			</div>
+			<svg class="divbar_A4_Path_19" viewBox="0 0 1 49">
+				<path id="divbar_A4_Path_19" d="M 0 0 L 0 0.765625 L 0 39.81250381469727 L 0 45.9375 L 0 49">
+				</path>
+			</svg>
+		</div>
+		<div id="mini_logo_A4_Group_40">
+			<svg class="logo_A4_Rectangle_31">
+				<pattern elementId="logo_A4_Rectangle_32" id="logo_A4_Rectangle_32_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="img/cart/spt-small.png" xlink:href="spt-small.png"></image>
+				</pattern>
+				<rect id="logo_A4_Rectangle_31" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+			<svg class="filter_A4_Rectangle_33">
+				<rect id="filter_A4_Rectangle_33" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div id="item_white_A4_Group_41">
+		<svg class="bg_A4_Rectangle_34">
+			<rect id="bg_A4_Rectangle_34" rx="0" ry="0" x="0" y="0" width="360" height="49">
+			</rect>
+		</svg>
+		<div id="product_A4_Group_42">
+			<div id="sub_name_A4_Text_29">
+				<span>Salva Piso Tradicional</span>
+			</div>
+			<div id="main_name_A4_Text_30">
+				<span>Papel+Bolha(1m)</span>
+			</div>
+		</div>
+		<div id="price_counter_A4_Group_43">
+			<div id="add_subtract_counter_A4_Group_44">
+				<div id="plus_A4_Group_45">
+					<svg class="bg_A4_Rectangle_35">
+						<rect id="bg_A4_Rectangle_35" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="plus_vector_A4_Path_20" viewBox="5 5 9.083 9.083">
+						<path id="plus_vector_A4_Path_20" d="M 8.892508506774902 5 L 8.892508506774902 8.892508506774902 L 5 8.892508506774902 L 5 10.1900110244751 L 8.892508506774902 10.1900110244751 L 8.892508506774902 14.08251857757568 L 10.1900110244751 14.08251857757568 L 10.1900110244751 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 10.1900110244751 8.892508506774902 L 10.1900110244751 5 L 8.892508506774902 5 Z">
+						</path>
+					</svg>
+				</div>
+				<div id="counter_A4_Text_31">
+					<span>0</span>
+				</div>
+				<div id="minus_A4_Group_46">
+					<svg class="bg_A4_Rectangle_36">
+						<rect id="bg_A4_Rectangle_36" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="minus_vector_A4_Path_21" viewBox="5 8.893 9.083 1.298">
+						<path id="minus_vector_A4_Path_21" d="M 5 8.892508506774902 L 5 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 5 8.892508506774902 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="price_A4_Text_32">
+				<span>R$ 176,10</span>
+			</div>
+			<svg class="divbar_A4_Path_22" viewBox="0 0 1 49">
+				<path id="divbar_A4_Path_22" d="M 0 0 L 0 0.765625 L 0 39.81250381469727 L 0 45.9375 L 0 49">
+				</path>
+			</svg>
+		</div>
+		<div id="mini_logo_A4_Group_47">
+			<svg class="logo_A4_Rectangle_37">
+				<pattern elementId="logo_A4_Rectangle_38" id="logo_A4_Rectangle_38_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="img/cart/spt-small.png" xlink:href="spt-small.png"></image>
+				</pattern>
+				<rect id="logo_A4_Rectangle_37" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+			<svg class="filter_A4_Rectangle_39">
+				<rect id="filter_A4_Rectangle_39" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div id="item_grey_A4_Group_48">
+		<svg class="bg_A4_Rectangle_40">
+			<rect id="bg_A4_Rectangle_40" rx="0" ry="0" x="0" y="0" width="360" height="49">
+			</rect>
+		</svg>
+		<div id="product_A4_Group_49">
+			<div id="sub_name_A4_Text_33">
+				<span>Salva Piso Tradicional</span>
+			</div>
+			<div id="main_name_A4_Text_34">
+				<span>Papel+Bolha(1m)</span>
+			</div>
+		</div>
+		<div id="price_counter_A4_Group_50">
+			<div id="add_subtract_counter_A4_Group_51">
+				<div id="plus_A4_Group_52">
+					<svg class="bg_A4_Rectangle_41">
+						<rect id="bg_A4_Rectangle_41" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="plus_vector_A4_Path_23" viewBox="5 5 9.083 9.083">
+						<path id="plus_vector_A4_Path_23" d="M 8.892508506774902 5 L 8.892508506774902 8.892508506774902 L 5 8.892508506774902 L 5 10.1900110244751 L 8.892508506774902 10.1900110244751 L 8.892508506774902 14.08251857757568 L 10.1900110244751 14.08251857757568 L 10.1900110244751 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 10.1900110244751 8.892508506774902 L 10.1900110244751 5 L 8.892508506774902 5 Z">
+						</path>
+					</svg>
+				</div>
+				<div id="counter_A4_Text_35">
+					<span>0</span>
+				</div>
+				<div id="minus_A4_Group_53">
+					<svg class="bg_A4_Rectangle_42">
+						<rect id="bg_A4_Rectangle_42" rx="0" ry="0" x="0" y="0" width="19" height="19">
+						</rect>
+					</svg>
+					<svg class="minus_vector_A4_Path_24" viewBox="5 8.893 9.083 1.298">
+						<path id="minus_vector_A4_Path_24" d="M 5 8.892508506774902 L 5 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 5 8.892508506774902 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="price_A4_Text_36">
+				<span>R$ 176,10</span>
+			</div>
+			<svg class="divbar_A4_Path_25" viewBox="0 0 1 49">
+				<path id="divbar_A4_Path_25" d="M 0 0 L 0 0.765625 L 0 39.81250381469727 L 0 45.9375 L 0 49">
+				</path>
+			</svg>
+		</div>
+		<div id="mini_logo_A4_Group_54">
+			<svg class="logo_A4_Rectangle_43">
+				<pattern elementId="logo_A4_Rectangle_44" id="logo_A4_Rectangle_44_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="img/cart/spt-small.png" xlink:href="spt-small.png"></image>
+				</pattern>
+				<rect id="logo_A4_Rectangle_43" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+			<svg class="filter_A4_Rectangle_45">
+				<rect id="filter_A4_Rectangle_45" rx="5" ry="5" x="0" y="0" width="70" height="37.07">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	<div id="info_bar_A4_Group_55">
+		<svg class="bg_A4_Rectangle_46">
+			<rect id="bg_A4_Rectangle_46" rx="0" ry="0" x="0" y="0" width="360" height="30">
+			</rect>
+		</svg>
+		<div id="title_right_A4_Text_37">
+			<span>Subtotal</span>
+		</div>
+		<svg class="div_bar_A4_Path_26" viewBox="0 0 1 30">
+			<path id="div_bar_A4_Path_26" d="M 0 0 L 0 24.37500190734863 L 0 28.125 L 0 30">
+			</path>
+		</svg>
+		<div id="title_left_A4_Text_38">
+			<span>Produtos</span>
+		</div>
+	</div>
+	<div id="header">
+		<svg class="headerbg">
+			<rect id="headerbg" rx="0" ry="0" x="0" y="0" width="360" height="80">
+			</rect>
+		</svg>
+		<svg class="header_A4_Rectangle_48">
+			<rect id="header_A4_Rectangle_48" rx="0" ry="0" x="0" y="0" width="360" height="80">
+			</rect>
+		</svg>
+		<div id="back">
+            <a href="javascript:history.back()">
+			<svg class="bg_A4_Rectangle_49">
+				<rect id="bg_A4_Rectangle_49" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<svg class="vector" viewBox="4 4 16 16">
+				<path id="vector" d="M 20 11 L 7.800000190734863 11 L 13.39999961853027 5.400000095367432 L 12 4 L 4 12 L 12 20 L 13.39999961853027 18.60000038146973 L 7.800000190734863 13 L 20 13 L 20 11 L 20 11 Z">
+				</path>
+			</svg>
+        </div>
+        </a>
+		<div id="title">
+			<span>Orçamento</span>
+		</div>
+		<div id="shopping_cart">
+			<svg class="bg_A4_Rectangle_50">
+				<rect id="bg_A4_Rectangle_50" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<div id="vector_A4_Group_59">
+				<svg class="Caminho_77" viewBox="0 0.625 19.25 14">
+					<path id="Caminho_77" d="M 19.00600051879883 2.970000028610229 C 18.81500053405762 2.750999927520752 18.54000091552734 2.625 18.25 2.625 L 4.431000232696533 2.625 L 4.236000061035156 1.460999965667725 C 4.156000137329102 0.9789999723434448 3.739000082015991 0.625 3.25 0.625 L 1 0.625 C 0.4470000267028809 0.625 0 1.072000026702881 0 1.625 C 0 2.177999973297119 0.4469999969005585 2.625 1 2.625 L 2.402999877929688 2.625 L 4.263000011444092 13.78899955749512 C 4.270999908447266 13.83399963378906 4.294000148773193 13.87099933624268 4.308000087738037 13.91299915313721 C 4.323999881744385 13.96599960327148 4.336999893188477 14.01599884033203 4.361999988555908 14.06399917602539 C 4.394000053405762 14.1299991607666 4.436999797821045 14.18599891662598 4.48199987411499 14.24299907684326 C 4.513000011444092 14.28199863433838 4.540999889373779 14.32099914550781 4.576999664306641 14.35499954223633 C 4.634999752044678 14.4089994430542 4.701999664306641 14.44699954986572 4.769999504089355 14.48499965667725 C 4.807999610900879 14.50599956512451 4.840999603271484 14.5339994430542 4.881999492645264 14.54999923706055 C 4.997999668121338 14.596999168396 5.119999408721924 14.62499904632568 5.24899959564209 14.62499904632568 C 5.249999523162842 14.62499904632568 16.25 14.62499904632568 16.25 14.62499904632568 C 16.80299949645996 14.62499904632568 17.25 14.17799949645996 17.25 13.62499904632568 C 17.25 13.07199859619141 16.80299949645996 12.62499904632568 16.25 12.62499904632568 L 6.097000122070313 12.62499904632568 L 5.931000232696533 11.62499904632568 L 17.25 11.62499904632568 C 17.74799919128418 11.62499904632568 18.17000007629395 11.25899887084961 18.23999977111816 10.76699924468994 L 19.23999977111816 3.766999244689941 C 19.2810001373291 3.479000091552734 19.19499969482422 3.187999963760376 19.00600051879883 2.970000028610229 Z M 17.09700012207031 4.625 L 16.8120002746582 6.625 L 13.25 6.625 L 13.25 4.625 L 17.09700012207031 4.625 Z M 12.25 4.625 L 12.25 6.625 L 9.25 6.625 L 9.25 4.625 L 12.25 4.625 Z M 12.25 7.625 L 12.25 9.625 L 9.25 9.625 L 9.25 7.625 L 12.25 7.625 Z M 8.25 4.625 L 8.25 6.625 L 5.25 6.625 C 5.197000026702881 6.625 5.14900016784668 6.639999866485596 5.10200023651123 6.65500020980835 L 4.764000415802002 4.625 L 8.25 4.625 Z M 5.263999938964844 7.625 L 8.25 7.625 L 8.25 9.625 L 5.597000122070313 9.625 L 5.263999938964844 7.625 Z M 13.25 9.625 L 13.25 7.625 L 16.66799926757813 7.625 L 16.38299942016602 9.625 L 13.25 9.625 Z">
+					</path>
+				</svg>
+				<svg class="Elipse_10">
+					<ellipse id="Elipse_10" rx="1.5" ry="1.5" cx="1.5" cy="1.5">
+					</ellipse>
+				</svg>
+				<svg class="Elipse_11">
+					<ellipse id="Elipse_11" rx="1.5" ry="1.5" cx="1.5" cy="1.5">
+					</ellipse>
+				</svg>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
