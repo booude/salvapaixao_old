@@ -11,6 +11,6 @@
 
 ### Área de Trabalho
 
-No seu navegador, abra o arquivo:
+  No seu navegador, abra o arquivo:
 
     /www/index.html
