@@ -9,8 +9,8 @@
 
     $ phonegap create my-app --template blank
 
-### Desktop
+### Área de Trabalho
 
-In your browser, open the file:
+No seu navegador, abra o arquivo:
 
     /www/index.html
