@@ -3,19 +3,7 @@
 
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-		$.ajax({
-			url: 'db/produtos.json',
-			dataType: 'json',
-			type: 'get',
-			cache: false,
-			success: function (data) {
-				$(data.produtos).each(function (index, value) {
-					console.log(value.nome)
-				})
-			}
-		})
-	</script>
+
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Tela 2</title>
