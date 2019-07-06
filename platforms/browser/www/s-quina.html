@@ -1,0 +1,716 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Tela 2 Salva Quina</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Tela_2_Salva_Quina;
+	}
+	#Tela_2_Salva_Quina * {
+		margin: 0;
+		padding: 0;
+	}
+	#Tela_2_Salva_Quina {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 360px;
+		height: 614px;
+		background-color: rgba(250,250,250,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: Tela 2 Salva Quina;
+		--web-view-id: Tela_2_Salva_Quina;
+		--web-enable-deep-linking: true;
+	}
+	#body {
+		position: absolute;
+		width: 321px;
+		height: 135px;
+		left: 15px;
+		top: 267px;
+		overflow: visible;
+	}
+	#product_name_first {
+		position: absolute;
+		width: 321px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#first_item {
+		position: absolute;
+		width: 318px;
+		height: 89px;
+		left: 3px;
+		top: 46px;
+		overflow: visible;
+	}
+	#sum_counter {
+		position: absolute;
+		width: 53px;
+		height: 83px;
+		left: 265px;
+		top: 0px;
+		overflow: visible;
+	}
+	#add_subtract_counter {
+		position: absolute;
+		width: 53px;
+		height: 19px;
+		left: 0px;
+		top: 64px;
+		overflow: visible;
+	}
+	#plus {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 34px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg {
+		fill: transparent;
+	}
+	.bg {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#plus_vector {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.plus_vector {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 9.083px;
+		height: 9.083px;
+	}
+	#counter {
+		position: absolute;
+		left: 22.5px;
+		top: 1px;
+		overflow: visible;
+		width: 9px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,0.541);
+	}
+	#minus {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#bg_A10_Rectangle_2 {
+		fill: transparent;
+	}
+	.bg_A10_Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		height: 19px;
+		left: 0px;
+		top: 0px;
+	}
+	#minus_vector {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.minus_vector {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 8.893px;
+		left: 5px;
+		width: 9.083px;
+		height: 1.297px;
+	}
+	#sum {
+		position: absolute;
+		left: 3px;
+		top: 0px;
+		overflow: visible;
+		width: 47px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.839);
+	}
+	#info_chart {
+		position: absolute;
+		width: 248px;
+		height: 87px;
+		left: 0px;
+		top: 2px;
+		overflow: visible;
+	}
+	#price {
+		position: absolute;
+		left: 185px;
+		top: 22px;
+		overflow: hidden;
+		width: 64px;
+		height: 36px;
+		line-height: 19px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.839);
+	}
+	#second_line_info {
+		position: absolute;
+		width: 168px;
+		height: 41px;
+		left: 0px;
+		top: 46px;
+		overflow: visible;
+	}
+	#R__0_65 {
+		position: absolute;
+		left: 129px;
+		top: 29px;
+		overflow: hidden;
+		width: 35px;
+		height: 12px;
+		line-height: 15px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.541);
+	}
+	#ID15__ {
+		position: absolute;
+		left: 72px;
+		top: 29px;
+		overflow: hidden;
+		width: 27px;
+		height: 12px;
+		line-height: 15px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.541);
+	}
+	#R__4_30 {
+		position: absolute;
+		left: 0px;
+		top: 29px;
+		overflow: hidden;
+		width: 46px;
+		height: 12px;
+		line-height: 15px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.541);
+	}
+	#IPI__R__ {
+		position: absolute;
+		left: 123px;
+		top: 0px;
+		overflow: hidden;
+		width: 46px;
+		height: 26px;
+		line-height: 13px;
+		margin-top: -1.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.839);
+	}
+	#IPI____ {
+		position: absolute;
+		left: 54px;
+		top: 0px;
+		overflow: hidden;
+		width: 62px;
+		height: 27px;
+		line-height: 13px;
+		margin-top: -1.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.839);
+	}
+	#Pre_o__ICMS_ {
+		position: absolute;
+		left: 3px;
+		top: 0px;
+		overflow: hidden;
+		width: 40px;
+		height: 26px;
+		line-height: 13px;
+		margin-top: -1.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.839);
+	}
+	#first_line_info {
+		position: absolute;
+		width: 140px;
+		height: 45px;
+		left: 14px;
+		top: 0px;
+		overflow: visible;
+	}
+	#ID1_8_ {
+		position: absolute;
+		left: 101px;
+		top: 30px;
+		overflow: hidden;
+		width: 19px;
+		height: 15px;
+		line-height: 15px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.541);
+	}
+	#ID5x5 {
+		position: absolute;
+		left: 5px;
+		top: 30px;
+		overflow: hidden;
+		width: 55px;
+		height: 14px;
+		line-height: 15px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.541);
+	}
+	#Comprimento__Metros_ {
+		position: absolute;
+		left: 79px;
+		top: 0px;
+		overflow: hidden;
+		width: 62px;
+		height: 27px;
+		line-height: 13px;
+		margin-top: -1.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.839);
+	}
+	#Altura__Cent_metros_ {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+		width: 64px;
+		height: 27px;
+		line-height: 13px;
+		margin-top: -1.5px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(0,0,0,0.839);
+	}
+	#sub_title {
+		position: absolute;
+		left: 1px;
+		top: 19px;
+		overflow: visible;
+		width: 147px;
+		white-space: nowrap;
+		line-height: 21px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,0.541);
+	}
+	#top_title {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 234px;
+		white-space: nowrap;
+		line-height: 24px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,0.871);
+	}
+	#top_image {
+		position: absolute;
+		width: 360px;
+		height: 197px;
+		left: 0px;
+		top: 57px;
+		overflow: visible;
+	}
+	#image {
+		fill: url(#image_A10_Rectangle_4_pattern);
+	}
+	.image {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 197px;
+		left: 0px;
+		top: 0px;
+	}
+	#top_image_filter {
+		opacity: 0.1;
+		fill: rgba(0,0,0,1);
+	}
+	.top_image_filter {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 197px;
+		left: 0px;
+		top: 0px;
+	}
+	#header {
+		position: fixed;
+		width: 360px;
+		height: 81px;
+		left: 0px;
+		top: -24px;
+		overflow: visible;
+	}
+	#headerbg {
+		fill: rgba(224,224,224,1);
+	}
+	.headerbg {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 80px;
+		left: 0px;
+		top: 1px;
+	}
+	#header_A10_Rectangle_7 {
+		fill: rgba(245,245,245,1);
+	}
+	.header_A10_Rectangle_7 {
+		position: absolute;
+		overflow: visible;
+		width: 360px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+	}
+	#back {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 16px;
+		top: 40px;
+		overflow: visible;
+	}
+	#bg_A10_Rectangle_8 {
+		fill: transparent;
+	}
+	.bg_A10_Rectangle_8 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#vector {
+		opacity: 0.54;
+		fill: rgba(0,0,0,1);
+	}
+	.vector {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		width: 16px;
+		height: 16px;
+	}
+	#title {
+		position: absolute;
+		left: 72.021px;
+		top: 40px;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#shopping_cart {
+		opacity: 0.54;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		left: 320px;
+		top: 41px;
+		overflow: visible;
+	}
+	#bg_A10_Rectangle_9 {
+		fill: transparent;
+	}
+	.bg_A10_Rectangle_9 {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#vector_A10_Group_15 {
+		position: absolute;
+		width: 19.25px;
+		height: 18px;
+		left: 2px;
+		top: 3px;
+		overflow: visible;
+	}
+	#Caminho_77 {
+		fill: rgba(3,1,4,1);
+	}
+	.Caminho_77 {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 19.25px;
+		height: 14px;
+	}
+	#Elipse_10 {
+		fill: rgba(3,1,4,1);
+	}
+	.Elipse_10 {
+		position: absolute;
+		overflow: visible;
+		width: 3px;
+		height: 3px;
+		left: 5.25px;
+		top: 15px;
+	}
+	#Elipse_11 {
+		fill: rgba(3,1,4,1);
+	}
+	.Elipse_11 {
+		position: absolute;
+		overflow: visible;
+		width: 3px;
+		height: 3px;
+		left: 14.25px;
+		top: 15px;
+	}
+</style>
+</head>
+<body>
+<div id="Tela_2_Salva_Quina">
+	<div id="body">
+		<div id="product_name_first">
+			<div id="first_item">
+				<div id="sum_counter">
+					<div id="add_subtract_counter">
+						<div id="plus">
+							<svg class="bg">
+								<rect id="bg" rx="0" ry="0" x="0" y="0" width="19" height="19">
+								</rect>
+							</svg>
+							<svg class="plus_vector" viewBox="5 5 9.083 9.083">
+								<path id="plus_vector" d="M 8.892508506774902 5 L 8.892508506774902 8.892508506774902 L 5 8.892508506774902 L 5 10.1900110244751 L 8.892508506774902 10.1900110244751 L 8.892508506774902 14.08251857757568 L 10.1900110244751 14.08251857757568 L 10.1900110244751 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 10.1900110244751 8.892508506774902 L 10.1900110244751 5 L 8.892508506774902 5 Z">
+								</path>
+							</svg>
+						</div>
+						<div id="counter">
+							<span>0</span>
+						</div>
+						<div id="minus">
+							<svg class="bg_A10_Rectangle_2">
+								<rect id="bg_A10_Rectangle_2" rx="0" ry="0" x="0" y="0" width="19" height="19">
+								</rect>
+							</svg>
+							<svg class="minus_vector" viewBox="5 8.893 9.083 1.298">
+								<path id="minus_vector" d="M 5 8.892508506774902 L 5 10.1900110244751 L 14.08251857757568 10.1900110244751 L 14.08251857757568 8.892508506774902 L 5 8.892508506774902 Z">
+								</path>
+							</svg>
+						</div>
+					</div>
+					<div id="sum">
+						<span>Total:<br/>R$ 0,00</span>
+					</div>
+				</div>
+				<div id="info_chart">
+					<div id="price">
+						<span>Preço:<br/>R$ 4,95</span>
+					</div>
+					<div id="second_line_info">
+						<div id="R__0_65">
+							<span>R$ 0,65</span>
+						</div>
+						<div id="ID15__">
+							<span>15%</span><br>
+						</div>
+						<div id="R__4_30">
+							<span>R$ 4,30</span>
+						</div>
+						<div id="IPI__R__">
+							<span>IPI<br/>(R$)</span>
+						</div>
+						<div id="IPI____">
+							<span>IPI<br/>(%)</span>
+						</div>
+						<div id="Pre_o__ICMS_">
+							<span>Preço<br/>(ICMS)</span>
+						</div>
+					</div>
+					<div id="first_line_info">
+						<div id="ID1_8_">
+							<span>1,8</span><br>
+						</div>
+						<div id="ID5x5">
+							<span>5x5</span>
+						</div>
+						<div id="Comprimento__Metros_">
+							<span>Comprimento<br/>(Metros)</span>
+						</div>
+						<div id="Altura__Cent_metros_">
+							<span>Altura<br/>(Centímetros)</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="sub_title">
+				<span>Pacote com 6 unidades</span>
+			</div>
+			<div id="top_title">
+				<span>Proteção para Quinas e Batentes</span>
+			</div>
+		</div>
+	</div>
+	<div id="top_image">
+		<svg class="image">
+			<pattern elementId="image_A10_Rectangle_4" id="image_A10_Rectangle_4_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="img\product-screen\s-quina-top.png" xlink:href="s-quina-top.png"></image>
+			</pattern>
+			<rect id="image" rx="0" ry="0" x="0" y="0" width="360" height="197">
+			</rect>
+		</svg>
+		<svg class="top_image_filter">
+			<rect id="top_image_filter" rx="0" ry="0" x="0" y="0" width="360" height="197">
+			</rect>
+		</svg>
+	</div>
+	<div id="header">
+		<svg class="headerbg">
+			<rect id="headerbg" rx="0" ry="0" x="0" y="0" width="360" height="80">
+			</rect>
+		</svg>
+		<svg class="header_A10_Rectangle_7">
+			<rect id="header_A10_Rectangle_7" rx="0" ry="0" x="0" y="0" width="360" height="80">
+			</rect>
+		</svg>
+		<div id="back">
+			<a href="index.html">
+			<svg class="bg_A10_Rectangle_8">
+				<rect id="bg_A10_Rectangle_8" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<svg class="vector" viewBox="4 4 16 16">
+				<path id="vector" d="M 20 11 L 7.800000190734863 11 L 13.39999961853027 5.400000095367432 L 12 4 L 4 12 L 12 20 L 13.39999961853027 18.60000038146973 L 7.800000190734863 13 L 20 13 L 20 11 L 20 11 Z">
+				</path>
+			</svg></a>
+		</div>
+		<div id="title">
+			<span>Salva Quina</span>
+		</div>
+		<div id="shopping_cart">
+			<a href="cart.html">
+			<svg class="bg_A10_Rectangle_9">
+				<rect id="bg_A10_Rectangle_9" rx="0" ry="0" x="0" y="0" width="24" height="24">
+				</rect>
+			</svg>
+			<div id="vector_A10_Group_15">
+				<svg class="Caminho_77" viewBox="0 0.625 19.25 14">
+					<path id="Caminho_77" d="M 19.00600051879883 2.970000028610229 C 18.81500053405762 2.750999927520752 18.54000091552734 2.625 18.25 2.625 L 4.431000232696533 2.625 L 4.236000061035156 1.460999965667725 C 4.156000137329102 0.9789999723434448 3.739000082015991 0.625 3.25 0.625 L 1 0.625 C 0.4470000267028809 0.625 0 1.072000026702881 0 1.625 C 0 2.177999973297119 0.4469999969005585 2.625 1 2.625 L 2.402999877929688 2.625 L 4.263000011444092 13.78899955749512 C 4.270999908447266 13.83399963378906 4.294000148773193 13.87099933624268 4.308000087738037 13.91299915313721 C 4.323999881744385 13.96599960327148 4.336999893188477 14.01599884033203 4.361999988555908 14.06399917602539 C 4.394000053405762 14.1299991607666 4.436999797821045 14.18599891662598 4.48199987411499 14.24299907684326 C 4.513000011444092 14.28199863433838 4.540999889373779 14.32099914550781 4.576999664306641 14.35499954223633 C 4.634999752044678 14.4089994430542 4.701999664306641 14.44699954986572 4.769999504089355 14.48499965667725 C 4.807999610900879 14.50599956512451 4.840999603271484 14.5339994430542 4.881999492645264 14.54999923706055 C 4.997999668121338 14.596999168396 5.119999408721924 14.62499904632568 5.24899959564209 14.62499904632568 C 5.249999523162842 14.62499904632568 16.25 14.62499904632568 16.25 14.62499904632568 C 16.80299949645996 14.62499904632568 17.25 14.17799949645996 17.25 13.62499904632568 C 17.25 13.07199859619141 16.80299949645996 12.62499904632568 16.25 12.62499904632568 L 6.097000122070313 12.62499904632568 L 5.931000232696533 11.62499904632568 L 17.25 11.62499904632568 C 17.74799919128418 11.62499904632568 18.17000007629395 11.25899887084961 18.23999977111816 10.76699924468994 L 19.23999977111816 3.766999244689941 C 19.2810001373291 3.479000091552734 19.19499969482422 3.187999963760376 19.00600051879883 2.970000028610229 Z M 17.09700012207031 4.625 L 16.8120002746582 6.625 L 13.25 6.625 L 13.25 4.625 L 17.09700012207031 4.625 Z M 12.25 4.625 L 12.25 6.625 L 9.25 6.625 L 9.25 4.625 L 12.25 4.625 Z M 12.25 7.625 L 12.25 9.625 L 9.25 9.625 L 9.25 7.625 L 12.25 7.625 Z M 8.25 4.625 L 8.25 6.625 L 5.25 6.625 C 5.197000026702881 6.625 5.14900016784668 6.639999866485596 5.10200023651123 6.65500020980835 L 4.764000415802002 4.625 L 8.25 4.625 Z M 5.263999938964844 7.625 L 8.25 7.625 L 8.25 9.625 L 5.597000122070313 9.625 L 5.263999938964844 7.625 Z M 13.25 9.625 L 13.25 7.625 L 16.66799926757813 7.625 L 16.38299942016602 9.625 L 13.25 9.625 Z">
+					</path>
+				</svg>
+				<svg class="Elipse_10">
+					<ellipse id="Elipse_10" rx="1.5" ry="1.5" cx="1.5" cy="1.5">
+					</ellipse>
+				</svg>
+				<svg class="Elipse_11">
+					<ellipse id="Elipse_11" rx="1.5" ry="1.5" cx="1.5" cy="1.5">
+					</ellipse>
+				</svg></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
